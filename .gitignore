@@ -17,19 +17,25 @@ ENV/
 # Local environment and secrets
 .env
 .env.*
+!.env.example
 config.py
 credentials.json
+*service-account*.json
+service_account.json
 *.pem
 *.key
 *.crt
 
 # Bot runtime data
 *.db
+*.db-wal
+*.db-shm
 *.sqlite
 *.sqlite3
 bot_data.db
 all_data_config.json
 *.session
+*.session-journal
 
 # Logs and temporary files
 *.log
